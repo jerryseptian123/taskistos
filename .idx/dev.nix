@@ -6,7 +6,7 @@
   # Use https://search.nixos.org/packages to find packages
   packages = [
 	  pkgs.python312
-    pkgs.nodejs_18
+    pkgs.nodejs_24
   ];
   idx = {
     extensions = [ "ms-python.python" ];
