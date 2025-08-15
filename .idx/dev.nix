@@ -2,11 +2,11 @@
 # see: https://developers.google.com/idx/guides/customize-idx-env
 { pkgs, ... }: {
   # Which nixpkgs channel to use.
-  channel = "stable-24.05"; # or "unstabl
+  channel = "nixos-unstable"; # or "unstabl
   # Use https://search.nixos.org/packages to find packages
   packages = [
-	  pkgs.python314
-    pkgs.nodejs_20
+	  pkgs.python
+    pkgs.nodejs
   ];
   idx = {
     extensions = [ "ms-python.python" ];
