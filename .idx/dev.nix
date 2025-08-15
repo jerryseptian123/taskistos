@@ -5,7 +5,7 @@
   channel = "stable-24.05"; # or "unstabl
   # Use https://search.nixos.org/packages to find packages
   packages = [
-	  pkgs.python312
+	  pkgs.python314
     pkgs.nodejs_24
   ];
   idx = {
