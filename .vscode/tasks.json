@@ -1,13 +1,13 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "start-app",
-            "type": "shell",
-            "command": "lsof -i :8798 || (export WS_PORT=8798 && npm run start)",
-            "runOptions": {
-                "runOn": "folderOpen"
-            },
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start-app",
+      "type": "shell",
+      "command": "chmod +x ./start.sh && ./start.sh",
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
 }
