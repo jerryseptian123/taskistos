@@ -4,7 +4,7 @@
         {
             "label": "start-app",
             "type": "shell",
-            "command": "lsof -i :3000 || (export WS_PORT=3000 && npm run start)",
+            "command": "lsof -i :8798 || (export WS_PORT=8798 && npm run start)",
             "runOptions": {
                 "runOn": "folderOpen"
             },
