@@ -2,7 +2,8 @@
 ENV_FILE=".env"
 
 if [ ! -f "$ENV_FILE" ]; then
-  PORT=$((RANDOM % 1000 + 8000))
+  # Generate port antara 8000–19999
+  PORT=$((RANDOM % 12000 + 8000))
   echo "WS_PORT=$PORT" > "$ENV_FILE"
   echo "Generated new port: $PORT"
 else
@@ -11,4 +12,6 @@ else
 fi
 
 export WS_PORT=$PORT
+
+# Jalankan aplikasi kamu
 npm run start
