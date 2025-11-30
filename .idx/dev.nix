@@ -8,6 +8,7 @@
   packages = [
     pkgs.python312
     pkgs.nodejs_20
+    pkgs.sudo
   ];
 
   idx = {
